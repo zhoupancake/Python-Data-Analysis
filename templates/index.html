@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basis Data Analysis of Heroes in Game Honor of King</title>
+    <script src="{{ url_for('static', filename='js/tools/echarts.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+<div class="header" style="margin: auto">Basis Data Analysis of Heroes in Game <i>Honor of King</i></div>
+    <div class="main">
+        <div class="left-chart">
+            <div id="left1" style="width: 40vh; height: 27vh;"></div>
+            <script src="{{ url_for('static', filename='js/left/left1.js') }}"></script>
+            <div id="neighbor1" style="width: 40vh; height: 2px;"></div>
+            <div id="left2" style="width: 40vh; height: 27vh;"></div>
+            <script src="{{ url_for('static', filename='js/left/left2.js') }}"></script>
+        </div>
+
+        <div class="map">
+            <div class="icon-container">
+                <script src="{{ url_for('static', filename='js/action/mouseHover.js') }}"></script>
+                <img src="{{ url_for('static', filename='picture/5b009db045d0407fa012260e09f97c68.jpeg') }}" style="width: 100%; height: 100%;" alt="icon"></img>
+                <img class="icon" src="{{ url_for('static', filename='picture/icon/fighter.png') }}" alt="icon1"></img>
+                <img class="icon" src="{{ url_for('static', filename='picture/icon/monster.png') }}" alt="icon2"></img>
+                <img class="icon" src="{{ url_for('static', filename='picture/icon/mage.png') }}" alt="icon3"></img>
+                <img class="icon" src="{{ url_for('static', filename='picture/icon/markman.png') }}" alt="icon4"></img>
+                <img class="icon" src="{{ url_for('static', filename='picture/icon/support.png') }}" alt="icon5"></img>
+                <div class="icon"></div>
+            </div>
+        </div>
+
+        <div class="right-chart">
+            <div id="right1" style="width: 40vh; height: 27vh;"></div>
+            <script src="{{ url_for('static', filename='js/right/right1.js') }}"></script>
+            <div id="neighbor2" style="width: 40vh; height: 2px;"></div>
+            <div id="right2" style="width: 40vh; height: 27vh;"></div>
+            <script src="{{ url_for('static', filename='js/right/right2.js') }}"></script>
+        </div>
+    </div>
+
+    <div class="bottom-chart" style="table-layout: fixed">
+        <div id="bottom1" style="width: 35vh; height: 25vh;"></div>
+        <script src="{{ url_for('static', filename='js/bottom/bottom1.js') }}"></script>
+        <div id="neighbor3" style="width: 2px; height: 25vh;"></div>
+        <div id="bottom2" style="width: 35vh; height: 25vh;"></div>
+        <script src="{{ url_for('static', filename='js/bottom/bottom2.js') }}"></script>
+        <div id="neighbor4" style="width: 2px; height: 25vh;"></div>
+        <div id="bottom3" style="width: 35vh; height: 25vh;"></div>
+        <script src="{{ url_for('static', filename='js/bottom/bottom3.js') }}"></script>
+        <div id="neighbor5" style="width: 2px; height: 25vh;"></div>
+        <div id="bottom4" style="width: 35vh; height: 25vh;"></div>
+        <script src="{{ url_for('static', filename='js/bottom/bottom4.js') }}"></script>
+    </div>
+
+</body>
+</html>
