@@ -10,4 +10,4 @@
   '''python
   python app.py
   '''
-  ![png](./src/dataAnalysis/dataAnalysis_files/finalResult.png")
+  ![png](src/dataAnalysis/dataAnalysis_files/finalResult.png")
