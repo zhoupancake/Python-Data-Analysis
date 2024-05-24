@@ -75,15 +75,15 @@ merged_df.to_csv("../data/data1.csv", index=False)
 
  Here come the screenshots of the dataset before and after the process.
 
-![image-20231211054316716](.\src\dataAnalysis\dataAnalysis_files\process_before1.png)
+![image-20231211054316716](./src/dataAnalysis/dataAnalysis_files/process_before1.png)
 
 The datasets before process (The row named '嫦娥' has null values)
 
-![image-20231211061602605](.\src\dataAnalysis\dataAnalysis_files\process_before2.png)
+![image-20231211061602605](./src/dataAnalysis/dataAnalysis_files/process_before2.png)
 
 The datasets before process (The row named '嫦娥' has '点' in some values)
 
-![image-20231211060448858](.\src\dataAnalysis\dataAnalysis_files\process_after.png)
+![image-20231211060448858](./src/dataAnalysis/dataAnalysis_files/process_after.png)
 
 The dataset after process
 
@@ -176,7 +176,7 @@ plt.show()
     4   support     14
     5  marksman     14
 
-![png](.\src\dataAnalysis\dataAnalysis_files/dataAnalysis_2_1.png)
+![png](./src/dataAnalysis/dataAnalysis_files/dataAnalysis_2_1.png)
     Based on the result I get, the fighter and the tank occupy important positions in the composition of heroes in *Honor of King*, which shows the love from the players might focus on the tank and the fighter. It might be the developing policy in next generation of *Honor of King*.  
 
 3. **Calculate the minimum and maximum of health points in different positions**
