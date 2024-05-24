@@ -226,7 +226,7 @@ plt.show()
 
 
 
-![png](.\src\dataAnalysis\dataAnalysis_files/dataAnalysis_3_1.png)
+![png](./src/dataAnalysis/dataAnalysis_files/dataAnalysis_3_1.png)
     The result shows that the health points in fighter and so on is fair. But the health points of assassins are a little bit low because there are some exception points in assassins. But based on the attack powers of assassins(this will show in the following part), this design is fair in *Honor of King*.
 
 4. **Calculate the average health for each position**
@@ -1428,4 +1428,4 @@ In the front-end, the data will be pass into the function 'processData' to shape
 
 ### Final Result
 
-![image-20231212192741129](.\src\dataAnalysis\dataAnalysis_files\finalResult.png)
+![image-20231212192741129](./src/dataAnalysis/dataAnalysis_files/finalResult.png)
