@@ -75,15 +75,15 @@ merged_df.to_csv("../data/data1.csv", index=False)
 
  Here come the screenshots of the dataset before and after the process.
 
-![image-20231211054316716](.\dataAnalysis_files\process_before1.png)
+![image-20231211054316716](.\src\dataAnalysis\dataAnalysis_files\process_before1.png)
 
 The datasets before process (The row named '嫦娥' has null values)
 
-![image-20231211061602605](.\dataAnalysis_files\process_before2.png)
+![image-20231211061602605](.\src\dataAnalysis\dataAnalysis_files\process_before2.png)
 
 The datasets before process (The row named '嫦娥' has '点' in some values)
 
-![image-20231211060448858](.\dataAnalysis_files\process_after.png)
+![image-20231211060448858](.\src\dataAnalysis\dataAnalysis_files\process_after.png)
 
 The dataset after process
 
@@ -176,7 +176,7 @@ plt.show()
     4   support     14
     5  marksman     14
 
-![png](dataAnalysis_files/dataAnalysis_2_1.png)
+![png](.\src\dataAnalysis\dataAnalysis_files/dataAnalysis_2_1.png)
     Based on the result I get, the fighter and the tank occupy important positions in the composition of heroes in *Honor of King*, which shows the love from the players might focus on the tank and the fighter. It might be the developing policy in next generation of *Honor of King*.  
 
 3. **Calculate the minimum and maximum of health points in different positions**
@@ -226,7 +226,7 @@ plt.show()
 
 
 
-![png](dataAnalysis_files/dataAnalysis_3_1.png)
+![png](.\src\dataAnalysis\dataAnalysis_files/dataAnalysis_3_1.png)
     The result shows that the health points in fighter and so on is fair. But the health points of assassins are a little bit low because there are some exception points in assassins. But based on the attack powers of assassins(this will show in the following part), this design is fair in *Honor of King*.
 
 4. **Calculate the average health for each position**
@@ -259,7 +259,7 @@ plt.show()
 
 
 
-![png](dataAnalysis_files/dataAnalysis_4_1.png)
+![png](./src/dataAnalysis/dataAnalysis_files/dataAnalysis_4_1.png)
     Based on this result, I draw the conclusion that the average health points can not show the distances between different positions completely cause they are almost same. To distinguishing different positions, we need to consider more parameters like attack powers and so on.
 
 5. **Calculate the average moving speed for each Position**
@@ -292,7 +292,7 @@ plt.show()
 
 
 
-![png](dataAnalysis_files/dataAnalysis_5_1.png)
+![png](./src/dataAnalysis/dataAnalysis_files/dataAnalysis_5_1.png)
     The result displays the difference between different positions. The average moving speed of markman is the lowest one among the six positions, which means that the characters can carry the whole competitions should be decrease to reduce impact of the competitions.
 
 6. **calculate the heroes with highest speed for each Position**
@@ -325,7 +325,7 @@ plt.title("The fastest Moving Speed in each Position")
     5  marksman  ChengJiSiHan            370
 
 
-![png](dataAnalysis_files/dataAnalysis_6_2.png)
+![png](./src/dataAnalysis/dataAnalysis_files/dataAnalysis_6_2.png)
 ​    
 
 The radio chart shows that the assassin, markman, fighter have close highest moving speeds (the hero named 'MengQi' should be recognized as the fighter rather than mage in this game version), but support and tank possess greater highest moving speeds, which can promises the supporting speed among the game. It is fair.
@@ -368,7 +368,7 @@ plt.show()
     4   support                     13.7                   7.6
     5      tank                     14.3                   7.6
 
-![png](dataAnalysis_files/dataAnalysis_7_1.png)
+![png](./src/dataAnalysis/dataAnalysis_files/dataAnalysis_7_1.png)
     The result show that the tank and the fighter possess the highest Physical Damage Reduction, which is fair because they are the characters who bear the most damage among six positions. But it is unfair to set the initial Magic Damage Reduction among six positions cause different position will receive different types of the damages, which requires the Magic Damage Reduction should be in different levels in different positions. 
 
 8. **Calculate the kurtosis of the Maximum Health for each Position and the overall kurtosis**
@@ -414,7 +414,7 @@ plt.show()
 
 
 
-![png](dataAnalysis_files/dataAnalysis_8_2.png)
+![png](./src/dataAnalysis/dataAnalysis_files/dataAnalysis_8_2.png)
     The values of the kurtosis shows the distances between the real distributions of values in dataset and the standard Gauss distribution. So the distributions of max health points of the assassin, fighter and markman are close to the Gauss distribution, but the mage and the tank appear great offset to the Gauss distribution, which refers to the unfair design in these positions heroes. 
 
 9. **Find the maximum mana for each Position and the overall maximum mana**
@@ -455,7 +455,7 @@ plt.show()
 
 
 
-![png](dataAnalysis_files/dataAnalysis_9_1.png)
+![png](./src/dataAnalysis/dataAnalysis_files/dataAnalysis_9_1.png)
     The result shows a reticular fact: all the positions acquire the same highest maximum magic attack power. For the same reason (different positions show use different levels and types attack to keep the balance of the game), this value should be various in different positions. But considering the growing of the heroes, I can accept this design partly. (To simple the basis data design)  
 
 10. **Calculate the correlation between Maximum Health and Health Regeneration**
@@ -499,7 +499,7 @@ plt.show()
     5      tank  0.214219
     6       all  0.197600
 
-![image-20231211083701186](dataAnalysis_files/dataAnalysis_10_1.png)
+![image-20231211083701186](./src/dataAnalysis/dataAnalysis_files/dataAnalysis_10_1.png)
     The result shows that the relation between the Maximum Health and Health Regeneration are almost same. But their is a exception: the support. This design might concerning the function of the support is the protect the  markman or the mage, which requires the higher health regeneration to satisfy the corresponding goal.
 
 11. Calculate the covariance matrix of Maximum Magic Attack Power and Magic Regeneration
@@ -586,7 +586,7 @@ plt.ylabel("MAD_PhysicalAttack")
     5      tank                 7.5
 
 
-![png](dataAnalysis_files/dataAnalysis_12_2.png)
+![png](./src/dataAnalysis/dataAnalysis_files/dataAnalysis_12_2.png)
     The provided data presents the Median Absolute Deviation (MAD) of 'PhysicalAttack' for heroes in different positions. MAD measures the dispersion of individual data points from the median, providing insights into the variability of physical attack within each position. Analyzing the MAD values across positions reveals how consistent or varied the physical attack values are for different hero roles. In the presented results, 'marksman,' 'support,' and 'tank' positions exhibit higher MAD values, suggesting greater variability in physical attack among heroes in these roles. This analysis aids in understanding the diversity of physical attack strengths within distinct hero positions in the game.
 
 13. **Calculate the mode of Movement Speed**
@@ -690,7 +690,7 @@ plt.show()
     4   support    0.0   0.0
     5      tank    0.0   0.0
 
-![png](dataAnalysis_files/dataAnalysis_14_1.png)
+![png](./src/dataAnalysis/dataAnalysis_files/dataAnalysis_14_1.png)
     The data analysis reveals that for each position, both short and long attack ranges exhibit zero skewness. This indicates a symmetric distribution in the attack range data for all professions, suggesting that the majority of heroes within each category have similar characteristics in terms of attack range. The skewness values of 0.0 imply that the data distribution is centered and balanced, without a significant tail on either side. Overall, the results suggest uniformity in the attack range distribution across different positions, with no apparent skewness towards short or long attack ranges.
 
 15. **Calculate the coefficient of variation for Maximum Mana of each Position**
@@ -735,7 +735,7 @@ plt.ylabel("CoefficientOfVariation")
     5      tank                0.728669
 
 
-![png](dataAnalysis_files/dataAnalysis_15_2.png)
+![png](./src/dataAnalysis/dataAnalysis_files/dataAnalysis_15_2.png)
     The provided data displays the coefficient of variation for the 'MaximumMana' attribute across distinct hero positions. This statistical measure assesses the relative variability of 'MaximumMana' concerning its mean. The values indicate the degree of dispersion within each position. The coefficients range from approximately 0.24 to 1.02, suggesting varying levels of dispersion across hero categories. Specifically, 'fighter' exhibits the highest variation, exceeding 1, while 'mage' shows the lowest variability with a coefficient around 0.24. Overall, the coefficients provide insights into the diversity of 'MaximumMana' within different hero positions in the analyzed dataset.
 
 16. **Calculate the covariance between Physical Attack and Magic Attack**
@@ -775,7 +775,7 @@ plt.show()
     5  marksman    39.853563
 
 
-![png](dataAnalysis_files/dataAnalysis_16_2.png)
+![png](./src/dataAnalysis/dataAnalysis_files/dataAnalysis_16_2.png)
     
 
 17. **Calculate the covariance between Physical Attack and Magic Attack by linear regression**
@@ -804,7 +804,7 @@ plt.show()
 covariance_value
 ```
 
-![png](dataAnalysis_files/dataAnalysis_17_0.png)
+![png](./src/dataAnalysis/dataAnalysis_files/dataAnalysis_17_0.png)
 ​
 
     18.94738442278458
@@ -1028,7 +1028,7 @@ To satisfy the requirements that the project need to be deployed and tested in d
 
 According to the requirements, I store the data I use in this project in .csv file inside the uploaded folder. There are three .csv file in the same folder named 'data.csv', 'source1.csv', 'source2.csv'. The main data source I use in the project is the 'data.csv' file, the file named 'source1.csv' and 'source2.csv' is the file that store the crawled result when I crawl the data. The data stored in the 'source1.csv' and 'source2.csv' are not be cleared, so the data can not be used in the whole project.
 
-![image-20231212174208576](E:\pythonFinal\src\dataAnalysis\dataAnalysis_files\directotyStructure.png) 
+![image-20231212174208576](.\src\dataAnalysis\dataAnalysis_files\directotyStructure.png) 
 
  #### The database
 
@@ -1428,4 +1428,4 @@ In the front-end, the data will be pass into the function 'processData' to shape
 
 ### Final Result
 
-![image-20231212192741129](.\dataAnalysis_files\finalResult.png)
+![image-20231212192741129](.\src\dataAnalysis\dataAnalysis_files\finalResult.png)
