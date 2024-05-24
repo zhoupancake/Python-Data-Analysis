@@ -1028,7 +1028,7 @@ To satisfy the requirements that the project need to be deployed and tested in d
 
 According to the requirements, I store the data I use in this project in .csv file inside the uploaded folder. There are three .csv file in the same folder named 'data.csv', 'source1.csv', 'source2.csv'. The main data source I use in the project is the 'data.csv' file, the file named 'source1.csv' and 'source2.csv' is the file that store the crawled result when I crawl the data. The data stored in the 'source1.csv' and 'source2.csv' are not be cleared, so the data can not be used in the whole project.
 
-![image-20231212174208576](.\src\dataAnalysis\dataAnalysis_files\directotyStructure.png) 
+![image-20231212174208576](./src/dataAnalysis/dataAnalysis_files/directotyStructure.png) 
 
  #### The database
 
